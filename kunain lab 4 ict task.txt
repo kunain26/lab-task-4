@@ -1,0 +1,73 @@
+#include<iostream>
+using namespace std;
+int main(){
+ int x = 25;
+ int y = 13;
+ cout<<"let x= "<<x<<" y = "<<y<<endl;
+ return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+ int x = 25;
+ int y = 13;
+
+int sum=x+y;
+int sub=x-y;
+int sub1=y-x;
+int mult=x*y;
+float div=x/y;
+cout<<"sum="<<sum<<endl;
+cout<<"sub="<<sub<<endl;
+cout<<"sub1="<<sub1<<endl;
+cout<<"mult="<<mult<<endl;
+cout<<"div="<<div<<endl;
+return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int length=21;
+    int width =15;
+    int perimeter= 2*(length +width);
+    int area = length * width;
+    cout<<"perimeter of rectangle = "<<perimeter<<endl;
+     cout<<"area of rectangle = "<<area<<endl;
+     return 0;
+    
+    
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    double num1,num2;
+    char op;
+    cout<<"enter operator (+,-,*,/)";
+    cin>> op;
+    
+    cout<<"enter two number";
+    cin>>num1>>num2;
+    switch(op) {
+        case'+':cout<<num1+num2<<endl;break;
+        case'-':cout<<num1-num2<<endl;break;
+        case'*':cout<<num1*num2<<endl;break;
+        case'/':cout<<num1/num2<<endl;break;
+        if (num2 = 0)
+                cout << num1 / num2 << endl;
+            else
+                cout << "Error Division by zero." << endl;
+            break;
+        default: cout << "Invalid operator" << endl;
+    }
+
+    return 0;
+}
+        
